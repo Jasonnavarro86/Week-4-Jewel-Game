@@ -1,0 +1,46 @@
+/* This is my general section for my backround image and back round colors for my page.*/
+
+body {
+    background-image: url("http://www.powerpointhintergrund.com/uploads/2017/05/free-strass-vector-gold-glitter-texture-on-black-background--7.jpeg");
+}
+
+#getNumber {
+    background-color: rgba(237, 232, 232, 0.50);
+    height: 2.0em;
+    color: black;
+   
+}
+
+button {
+    color: #000000;
+}
+
+
+.color1 {
+    background-color: rgba(244, 241, 5, 0.58);
+    color:#010101;
+    font-weight: 400;
+}
+.color2 {
+    color: rgba(255, 255, 255, 0.60);
+    
+}
+
+#result,
+#result1,
+#result2,
+#result3 {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 5px rgba(247, 255, 0, 0.73);
+}
+
+.fa {
+    color: rgba(254, 252, 5, 0.97);
+    text-align: center;
+}
+
+.resetBox{
+    background-color: #E0CE1D;
+    height: 3em;
+    margin-top: 2em;
+}

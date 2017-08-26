@@ -9,94 +9,47 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Zilla+Slab+Highlight" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>MY WEEK 4 ASSIGNMENT</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
 </head>
 
 
 
 
-<body>
-
-    <h1 id="getNumber" class="container btn-danger  jumbotron center text-center">
+<body class="container">
+<!-- Main Header and instructions-->
+    <h1 id="getNumber" class="container btn-danger display-3 jumbotron center text-center">
         MATCH YOUR SCORE
     </h1>
-    <h2 id="winningNum" class="container jumbotron"></h2>
-    <div class="container row">
-        <p id="result" class="container  btn-info number col">
-        </p>
-        <p id="result1" class="container  btn-success number col">
-        </p>
-        <p id="result2" class="container  btn-dark number col">
-        </p>
-        <p id="result3" class="container btn-danger number col">
-        </p>
+    <p class=" p1 container text-center color2">click the 4 buttons and add to your score!</p>
+    
+    <!-- The main container that holds the game and disapears when the player wins or loses. -->
+    <div id="reset" class="container row justify-content-around">
+        <!-- The random numner the player has to match. -->
+        <h2 id="winningNum" class=" col container display-4 text-center jumbotron color1 "></h2>
+        <div class="col"></div>
+        <!-- the players score. -->
+        <p id="result4" class=" col  container display-4 color1 text-center jumbotron">0</p>
     </div>
-    <p id="result4" class="container btn-primary jumbotron">0
-    </p>
+    <!-- the 4 buttons that add to the players score. -->
+        <div class="container  justify-content-around row relat">
+            <i id="absO" class="fa fa-camera-retro justify-content-around fa-3x"> 
+            <button id="result" class=" container text-center jumbotron btn-lg number col"> </button></i>
+            <i class="fa  fa-cubes fa-3x">
+            <button id="result1" class="container  text-center jumbotron btn-lg number col">
+            </button></i>
+            <i class="fa fa-coffee fa-3x">
+            <button id="result2" class="container  text-center jumbotron btn-lg number col">
+            </button></i>
+            <i class="fa fa-puzzle-piece fa-3x">
+            <button id="result3" class="container text-center jumbotron btn-lg number col">
+            </button></i>
+        </div>
 
-    <script>
-        //    This var is for my empty array where I push up the 4 random numbers generated at the start of the game.
-        var numClick = [];
-
-        // START: In this section I create 4 random #'s between 1 & 12, push them into an array, then assign each number to the box the player clicks. 
-        function ranNumGen() {
-
-            for (var i = 0; i < 4; i++) {
-                var ranNum = Math.floor(Math.random() * (12) + 1);
-
-                numClick.push(ranNum);
-
-                $('#result').html(numClick[0]);
-                $('#result1').html(numClick[1]);
-                $('#result2').html(numClick[2]);
-                $('#result3').html(numClick[3]);
-            }
-        };
-        ranNumGen();
-        // END___________________________________________________
-
-
-        // START: Here I generate the main # for the player to match.__
-        function mainNumGen() {
-            var minNumberMain = 19;
-            var maxNumberMain = 120;
-            var mainNum = Math.floor(Math.random() * (maxNumberMain) + minNumberMain);
-            $('#winningNum').html(mainNum);
-        }
-        mainNumGen();
-        // END________________________________
-
-
-        // START: Here I created an onClick function to calculate the score;
-        function getScore() {
-
-
-            $('.number').on("click", function () {
-                // this var returns the random # that was assinged at the start of the game.
-                var newScore = $(this).text();
-                // this var gets the # in the score box. 
-                var answer = $("#result4").text();
-                // these 2 vars parse both #'s into integers.
-                var newScoreParse = parseInt(newScore);
-                var answerParse = parseInt(answer);
-                // this var adds both intergers.
-                var addAnswers = answerParse + newScoreParse;
-                // here I send the new score into the score box.
-                $("#result4").text(addAnswers);
-            })
-        };
-        // END____________________________________________________
-
-        getScore();
-        
-
+    <script src="assets/javascript/java.js">
     </script>
-
-
 </body>
 
 </html>
-
