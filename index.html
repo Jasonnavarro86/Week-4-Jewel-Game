@@ -70,6 +70,28 @@
         // END________________________________
 
 
+        // START: Here I created an onClick function to calculate the score;
+        function getScore() {
+
+
+            $('.number').on("click", function () {
+                // this var returns the random # that was assinged at the start of the game.
+                var newScore = $(this).text();
+                // this var gets the # in the score box. 
+                var answer = $("#result4").text();
+                // these 2 vars parse both #'s into integers.
+                var newScoreParse = parseInt(newScore);
+                var answerParse = parseInt(answer);
+                // this var adds both intergers.
+                var addAnswers = answerParse + newScoreParse;
+                // here I send the new score into the score box.
+                $("#result4").text(addAnswers);
+            })
+        };
+        // END____________________________________________________
+
+        getScore();
+        
 
     </script>
 
