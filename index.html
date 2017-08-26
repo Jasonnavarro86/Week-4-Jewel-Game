@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Zilla+Slab+Highlight" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>MY WEEK 4 ASSIGNMENT</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</head>
+
+
+
+
+<body>
+
+    <h1 id="getNumber" class="container btn-danger  jumbotron center text-center">
+        MATCH YOUR SCORE
+    </h1>
+    <h2 id="winningNum" class="container jumbotron"></h2>
+    <div class="container row">
+        <p id="result" class="container  btn-info number col">
+        </p>
+        <p id="result1" class="container  btn-success number col">
+        </p>
+        <p id="result2" class="container  btn-dark number col">
+        </p>
+        <p id="result3" class="container btn-danger number col">
+        </p>
+    </div>
+    <p id="result4" class="container btn-primary jumbotron">0
+    </p>
+
+    <script>
+        //    This var is for my empty array where I push up the 4 random numbers generated at the start of the game.
+        var numClick = [];
+
+        // START: In this section I create 4 random #'s between 1 & 12, push them into an array, then assign each number to the box the player clicks. 
+        function ranNumGen() {
+
+            for (var i = 0; i < 4; i++) {
+                var ranNum = Math.floor(Math.random() * (12) + 1);
+
+                numClick.push(ranNum);
+
+                $('#result').html(numClick[0]);
+                $('#result1').html(numClick[1]);
+                $('#result2').html(numClick[2]);
+                $('#result3').html(numClick[3]);
+            }
+        };
+        ranNumGen();
+        // END___________________________________________________
+
+        
+
+    </script>
+
+
+</body>
+
+</html>
+
