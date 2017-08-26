@@ -58,7 +58,18 @@
         ranNumGen();
         // END___________________________________________________
 
-        
+
+        // START: Here I generate the main # for the player to match.__
+        function mainNumGen() {
+            var minNumberMain = 19;
+            var maxNumberMain = 120;
+            var mainNum = Math.floor(Math.random() * (maxNumberMain) + minNumberMain);
+            $('#winningNum').html(mainNum);
+        }
+        mainNumGen();
+        // END________________________________
+
+
 
     </script>
 
