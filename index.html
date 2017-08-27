@@ -9,22 +9,16 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Zilla+Slab+Highlight" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>MY WEEK 4 ASSIGNMENT</title>
+    <title></title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
 </head>
 
-
-
-
 <body class="container">
-<!-- Main Header and instructions-->
-    <h1 id="getNumber" class="container btn-danger display-3 jumbotron center text-center">
-        MATCH YOUR SCORE
-    </h1>
-    <p class=" p1 container text-center color2">click the 4 buttons and add to your score!</p>
-    
+    <!-- Main Header and instructions-->
+    <h1 id="getNumber" class="container btn-danger display-3 jumbotron center text-center">MATCH OUR SCORE</h1>
+    <p class=" p1 container text-center color2">CLICK AN ANIMAL AND ADD TO YOUR SCORE!</p>
     <!-- The main container that holds the game and disapears when the player wins or loses. -->
     <div id="reset" class="container row justify-content-around">
         <!-- The random numner the player has to match. -->
@@ -34,20 +28,12 @@
         <p id="result4" class=" col  container display-4 color1 text-center jumbotron">0</p>
     </div>
     <!-- the 4 buttons that add to the players score. -->
-        <div class="container  justify-content-around row relat">
-            <i id="absO" class="fa fa-camera-retro justify-content-around fa-3x"> 
-            <button id="result" class=" container text-center jumbotron btn-lg number col"> </button></i>
-            <i class="fa  fa-cubes fa-3x">
-            <button id="result1" class="container  text-center jumbotron btn-lg number col">
-            </button></i>
-            <i class="fa fa-coffee fa-3x">
-            <button id="result2" class="container  text-center jumbotron btn-lg number col">
-            </button></i>
-            <i class="fa fa-puzzle-piece fa-3x">
-            <button id="result3" class="container text-center jumbotron btn-lg number col">
-            </button></i>
-        </div>
-
+    <div class="container  justify-content-around row relat">
+        <i class="fa fa-gea fa-3x"><button id="result" class=" container text-center jumbotron btn-lg number col" value="0"> </button></i>
+        <i class="fa fa-gea fa-3x"><button id="result1" class="container text-center jumbotron btn-lg number col" value="0"></button></i>
+        <i class="fa fa-coff fa-3x"><button id="result2" class="container  text-center jumbotron btn-lg number col" value="0"></button></i>
+        <i class="fa fa-puzzliece fa-3x"><button id="result3" class="container text-center jumbotron btn-lg number col" value="0"></button></i>
+    </div>
     <script src="assets/javascript/java.js">
     </script>
 </body>

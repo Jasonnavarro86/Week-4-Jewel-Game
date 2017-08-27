@@ -1,46 +1,87 @@
 /* This is my general section for my backround image and back round colors for my page.*/
-
 body {
-    background-image: url("http://www.powerpointhintergrund.com/uploads/2017/05/free-strass-vector-gold-glitter-texture-on-black-background--7.jpeg");
+    background-color: #FFFFFF; 
+}
+/* Header */
+#getNumber {
+    background-color: rgba(24, 26, 26, 0.80);
+    height: 2.0em;
+    color: #F7F7F7;
+    margin-bottom: 1em;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px rgba(90, 93, 93, 0.73);
+}
+/* Small sentence that gives instuctions. */
+.p1{
+    font-size: 13px;
+    font-weight: 500;
+    padding-right: 3em;
+    color: #151717;
+    text-shadow: 2px 2px 2px rgba(90, 93, 93, 0.73);
 }
 
-#getNumber {
-    background-color: rgba(237, 232, 232, 0.50);
-    height: 2.0em;
-    color: black;
+/* Here are the two boxes that hold the random number and the players score. */
+.color1 {
+    color:#FFFAFA;
+    font-weight: 600;
+    background-color: rgb(59, 186, 199);
+    margin-bottom: 1em;
+    box-shadow: 5px 5px 5px rgba(138, 152, 152, 0.73);
+    margin-left:1%;
+}
+
+/* Here is the animated reset box to start the game over. */
+.resetBox{
+    
+    height: 7em;
+    width: 7em;
+    margin-top: 0em;
+    font-size: 1em;
+    padding: 0.5em;
+    color: rgba(170, 15, 238, 0.77);
+    font-weight: 400;
+    text-align: center;
+    background-image: url("https://ih0.redbubble.net/image.179835567.9847/flat,800x800,075,f.jpg");
+    background-position: center; 
+}
+/* Here are my 4 main buttons that adds the score. */
+.fa {
+   
+    width:5em;
    
 }
-
 button {
     color: #000000;
+   
 }
-
-
-.color1 {
-    background-color: rgba(244, 241, 5, 0.58);
-    color:#010101;
-    font-weight: 400;
-}
-.color2 {
-    color: rgba(255, 255, 255, 0.60);
+#result{
+    background-image: url("http://theartmad.com/wp-content/uploads/2015/02/Geometric-Animal-Wallpaper-42.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; 
     
+    box-shadow: 10px 10px 5px rgba(230, 47, 56, 0.73);
 }
 
-#result,
-#result1,
-#result2,
-#result3 {
-    background-color: rgb(0, 0, 0);
-    box-shadow: 10px 10px 5px rgba(247, 255, 0, 0.73);
+#result1{
+    background-image: url("https://i.pinimg.com/736x/79/46/1c/79461c0df3976c63b6553ba0bdb2bd2d--female-tattoos-wolf-tattoos.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+    box-shadow: 10px 10px 5px rgba(47, 144, 230, 0.73); 
 }
 
-.fa {
-    color: rgba(254, 252, 5, 0.97);
-    text-align: center;
+#result2{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/95/40/7c/95407c95f19ead2822a43ddf7519eaf9.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 10px 10px 5px rgba(230, 152, 47, 0.73);
+    background-position: center; 
 }
-
-.resetBox{
-    background-color: #E0CE1D;
-    height: 3em;
-    margin-top: 2em;
+#result3{
+    background-image: url("http://media02.hongkiat.com/geometric-artworks/hopelittle-owl.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 10px 10px 5px rgba(221, 201, 68, 0.73);
+    background-position: center; 
 }
